@@ -20,12 +20,9 @@ htmlcov/
 # Локальное хранилище DVC
 dvc_storage_nyc_taxi/
 
-# Локальные данные
-data/raw/*
-!data/raw/*.dvc
-
-data/processed/*
-!data/processed/*.dvc
+# Локальные данные, хранящиеся через DVC
+data/raw/yellow_tripdata_2016-03.csv
+data/processed/yellow_tripdata_2016-03_clean.csv
 
 # Временные файлы
 *.log
