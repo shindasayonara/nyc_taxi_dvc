@@ -1,0 +1,10 @@
+
+stages:
+  preprocess:
+    cmd: python src/pipeline.py --input data/raw/yellow_tripdata_2016-03.csv --output data/processed/yellow_tripdata_2016-03_clean.csv
+    deps:
+      - data/raw/yellow_tripdata_2016-03.csv
+      - src/pipeline.py
+      - src/preprocess.py
+    outs:
+      - data/processed/yellow_tripdata_2016-03_clean.csv
