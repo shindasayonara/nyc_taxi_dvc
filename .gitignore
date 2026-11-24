@@ -1,0 +1,33 @@
+# Виртуальное окружение Python
+.venv/
+venv/
+env/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Кэш тестирования
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Конфигурация IDE
+.vscode/
+.idea/
+
+# Локальное хранилище DVC
+dvc_storage_nyc_taxi/
+
+# Локальные данные
+data/raw/*
+!data/raw/*.dvc
+
+data/processed/*
+!data/processed/*.dvc
+
+# Временные файлы
+*.log
+.DS_Store
+Thumbs.db
